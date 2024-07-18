@@ -21,14 +21,14 @@ public class SMSService {
     String OUTGOING_SMS_NUMBER;
 
     public SMSService(){
-        log.info("creating class contructor");
-        log.info("creating class contructor ACCOUNT_SID"+ACCOUNT_SID);
+      //  log.info("creating class contructor");
+       // log.info("creating class contructor ACCOUNT_SID"+ACCOUNT_SID);
 
     }
 
     @PostConstruct
     private void setup(){
-        log.info("creating class post contructor ACCOUNT_SID"+ACCOUNT_SID);
+       //log.info("creating class post contructor ACCOUNT_SID"+ACCOUNT_SID);
         Twilio.init(ACCOUNT_SID,AUTH_TOKEN);
 
     }
